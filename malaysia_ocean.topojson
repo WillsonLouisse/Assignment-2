@@ -1,1 +1,0 @@
-{"type":"Topology","objects":{"malaysia_ocean":{"type":"GeometryCollection","geometries":[{"type":"Polygon","arcs":[[0]],"properties":{"type":"Ocean"}}]}},"arcs":[[[0, 0], [0, 275000], [350000, 0], [0, -250000], [-350000, 0]]],"bbox":[98.5,1.5,119,7.5],"transform":{"scale":[0.0000600, 0.000020],"translate":[98.5,1.5]}}
