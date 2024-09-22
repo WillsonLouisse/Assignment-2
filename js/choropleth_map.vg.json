@@ -1,8 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "GDP in Malaysia",
+  "title": "GDP in Malaysia Per States",
   "width": 800,
   "height": 400,
+  "background": "lightblue",
   "projection": {
     "type": "equalEarth"
   },
@@ -13,32 +14,42 @@
       "feature": "states"
     }
   },
-  "transform": [
+
+  "layer": [
     {
-      "lookup": "properties.Name",
-      "from": {
-        "data": {
-          "url": "https://raw.githubusercontent.com/WillsonLouisse/Assignment-2/refs/heads/main/A2DataNum.csv"
+    "transform": [
+        {
+          "lookup": "properties.Name",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/WillsonLouisse/Assignment-2/refs/heads/main/A2DataNum.csv"
+            },
+            "key": "STATE",
+            "fields": ["GDP PER CAPITA", "POPULATION"]
+          }
         },
-        "key": "STATE",
-        "fields": ["GDP PER CAPITA", "POPULATION"]
+        {
+          "calculate": "parseFloat(datum['GDP PER CAPITA'])",
+          "as": "GDP_PER_CAPITA_NUM"
+        },
+        {
+          "calculate": "parseFloat(datum['POPULATION'])",
+          "as": "POPULATION_NUM"
+        }
+      ],
+      "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 1},
+      "encoding": {
+        "color": {
+          "field": "GDP_PER_CAPITA_NUM",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {"field": "properties.Name", "type": "nominal", "title": "State: "},
+          {"field": "POPULATION_NUM", "type": "quantitative","format": ",.0f",  "title": "Total Population: "},
+          {"field": "GDP_PER_CAPITA_NUM", "type": "quantitative", "format": ",.0f", "title": "GDP PER CAPITA: "}
+        ]
       }
-    },
-    {
-      "calculate": "parseFloat(datum['GDP PER CAPITA'])",
-      "as": "GDP_PER_CAPITA_SUM"
     }
-  ],
-  "mark": {"type": "geoshape"},
-  "encoding": {
-    "color": {
-      "field": "GDP_PER_CAPITA_SUM",
-      "type": "quantitative"
-    },
-    "tooltip": [
-      {"field": "properties.Name", "type": "nominal", "title": "State:"},
-      {"field": "GDP PER CAPITA", "type": "quantitative", "title": "GDP Per Capita:"},
-      {"field": "POPULATION", "type": "quantitative", "title": "Total Population:"}
-    ]
-  }
+  ]
+  
 }
