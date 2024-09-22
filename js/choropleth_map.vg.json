@@ -17,6 +17,14 @@
 
   "layer": [
     {
+      "transform": [
+        {
+          "calculate": "datum.properties.Name == 'Putrajaya' ? 'This Area Is Putrajaya data is combined with Selangor' : 'Data is not available in ' + datum.properties.Name",
+          "as": "note"
+        }
+      ]
+    },
+    {
     "transform": [
         {
           "lookup": "properties.Name",
