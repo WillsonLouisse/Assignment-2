@@ -13,12 +13,22 @@
 </head>
 <body>
   
-<div id="choropleth_map"></div>
+  <div id="vis">
+    <div id="controls"></div>
+    <div id="choropleth_map"></div>
+  </div>
+
+<div id="bar_chart"></div>
 
 <script type="text/javascript">
 
   var spec2 = "js/choropleth_map.vg.json";
   vegaEmbed('#choropleth_map', spec2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  var barChartSpec = "js/barchart.vg.json"
+  vegaEmbed('#bar_chart', barChartSpec).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
