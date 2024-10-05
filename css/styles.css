@@ -10,7 +10,7 @@
 
 .vega-bindings {
 	/* make it arrange horizontally on the left make gap in between only 20px */
-	display: flex;
+	display: flex !important;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
