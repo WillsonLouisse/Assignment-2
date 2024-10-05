@@ -1,8 +1,8 @@
 #choropleth_map {
-	top:100px;
-	bottom: 100px; 
-	left: 100px;
-	right: 100px;
+	margin: 0 auto;  /* Center the map horizontally */
+	width: 90%;  /* Take up most of the available width */
+	height: 500px;  /* Height of the choropleth map */
+	position: relative;
 	/*height: 1000px;
 	width: 800px;*/
 }
@@ -13,8 +13,5 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-
-
-
 
 }
