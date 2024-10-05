@@ -1,11 +1,42 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "GDP in Malaysia Per States",
-  "width": 800,
+  "width": 900,
   "height": 400,
   "background": "lightblue",
+
+  "params":[
+    {
+      "name": "zoom_lvl",
+      "value": 3000,
+      "bind": {
+        "input": "range",
+        "min": 500,
+        "max": 3000,
+        "step": 50,
+        "name": "Zoom: "
+      }
+  },
+  {
+    "name": "center_to",
+    "value": [106, 4],
+    "bind": {
+      "input": "select",
+      "options": [
+        [109.5, 4],
+        [101.7, 3.1],
+        [116, 4.3]
+      ],
+      "labels": ["Malaysia Center", "West Malaysia", "East Malaysia"],
+      "name": "Map Centre: "
+    }
+  }
+  ],
   "projection": {
-    "type": "equalEarth"
+    "type": "equalEarth",
+    "center": {"expr": "center_to"},
+    "scale": {"expr": "zoom_lvl"},
+    "translate": [450, 200]   
   },
   "data": {
     "url": "https://raw.githubusercontent.com/WillsonLouisse/Assignment-2/refs/heads/main/malaysia-states.topojson",
