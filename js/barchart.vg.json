@@ -12,25 +12,73 @@
             "title": "GDP PER CAPITA in Malaysia Per States",
             "width": 480,
             "height": 480,
-            "mark": "bar",
+            
+            "mark": {
+                "type": "bar",
+                "tooltip": true
+            },
+
             "encoding": {
-                "x": {"field": "STATE", "type": "nominal", "axis":
-            {"title": "State: "}},
-                "y": {"field": "GDP PER CAPITA", "type": "quantitative", "format": ",.0f", "title": "GDP PER CAPITA: "}
-            }
+                "x": {"field": "STATE", "type": "nominal", 
+                "axis":
+                    {
+                        "title": "State",
+                        "labelFont": "Helvetica",         
+                        "labelFontSize": 12
+                    }
+            },
+                "y": {"field": "GDP PER CAPITA", "type": "quantitative", "format": ",.0f", 
+                "axis":
+                    {
+                        "title": "GDP PER CAPITA",
+                        "labelFont": "Helvetica",         
+                        "labelFontSize": 12
+                    }
+                }
+            },
+
+        "tooltip": [
+                {"field": "STATE", "type": "nominal", "title": "STATE: "},
+                {"field": "GDP PER CAPITA", "type": "quantitative", "format": ",.0f", "title": "GDP PER CAPITA: "}
+            ]
+
         },
+
+
         {
             "title": "GDP NOMINAL in Malaysia Per States",
             "width": 480,
             "height": 480,
-            "mark": "bar",
+            "mark": {
+                "type": "bar",
+                "tooltip": true
+            },
+
             "encoding": {
-                "x": {"field": "STATE", "type": "nominal", "axis":
-            {"title": "State: "}},
-                "y": {"field": "GDP NOMINAL", "type": "quantitative", "format": ",.0f", "title": "GDP NOMINAL: "}
+                "x": {"field": "STATE", "type": "nominal", 
+                "axis":
+                {
+                    "title": "State",
+                    "labelFont": "Helvetica",         
+                    "labelFontSize": 12
+                }
+            },
+                "y": {"field": "GDP NOMINAL", "type": "quantitative", "format": ",.0f", 
+                "axis":
+                {
+                    "title": "GDP NOMINAL",
+                    "labelFont": "Helvetica",         
+                    "labelFontSize": 12
+                }
             }
+            },
+            "tooltip": [
+                {"field": "STATE", "type": "nominal", "title": "STATE: "},
+                {"field": "GDP NOMINAL", "type": "quantitative", "format": ",.0f", "title": "GDP NOMINAL: "}
+            ]
         }
     ]
+
 }
 
   
