@@ -18,7 +18,7 @@
     <div id="choropleth_map"></div>
   </div>
 
-<div id="bar_chart"></div>
+<div id="barChart"></div>
 
 <script type="text/javascript">
 
@@ -27,38 +27,9 @@
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 
-  var barChartSpec = {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 800,
-    "height": 400,
-    "data": {
-      "url": "https://raw.githubusercontent.com/WillsonLouisse/Assignment-2/refs/heads/main/A2DataNum.csv"
-    },
-    "hconcat": [
-      {
-        "title": "GDP PER CAPITA in Malaysia Per States",
-        "width": 480,
-        "height": 480,
-        "mark": "bar",
-        "encoding": {
-          "x": {"field": "STATE", "type": "nominal", "axis": {"title": "State: "}},
-          "y": {"field": "GDP PER CAPITA", "type": "quantitative", "format": ",.0f", "title": "GDP PER CAPITA: "}
-        }
-      },
-      {
-        "title": "GDP NOMINAL in Malaysia Per States",
-        "width": 480,
-        "height": 480,
-        "mark": "bar",
-        "encoding": {
-          "x": {"field": "STATE", "type": "nominal", "axis": {"title": "State: "}},
-          "y": {"field": "GDP NOMINAL", "type": "quantitative", "format": ",.0f", "title": "GDP NOMINAL: "}
-        }
-      }
-    ]
-  };
+  var barChartSpec = "js/barchart.vg.json"
   
-  vegaEmbed('#bar_chart', barChartSpec).then(function(result) {
+  vegaEmbed('#barChart', barChartSpec).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
