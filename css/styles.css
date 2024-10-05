@@ -6,3 +6,15 @@
 	/*height: 1000px;
 	width: 800px;*/
 }
+
+.vega-bindings {
+	/* make it arrange horizontally on the left make gap in between only 20px */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+
+
+
+}
