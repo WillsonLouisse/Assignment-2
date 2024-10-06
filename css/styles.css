@@ -5,9 +5,10 @@
 	padding: 20px;
   }
 
-#vis-map {
+#vis {
 	flex: 1;
 	padding-right: 20px;  /* Space between map and content */
+	left: 100px;
 }
 
 .top-section {
@@ -57,7 +58,7 @@ p {
 }
 
 #choropleth_map {
-	top:100px;
+
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
@@ -65,6 +66,7 @@ p {
 	/*height: 1000px;
 	width: 800px;*/
 }
+
 
 .vega-bindings {
 	/* make it arrange horizontally on the left make gap in between only 20px */
