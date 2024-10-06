@@ -1,59 +1,68 @@
-
 .top-section {
 	text-align: center;
 	padding: 20px;
 	background-color: #f1ebe5;
   }
 
-.top-section h1 {
-    text-align: center;
-    color: #527298; 
-    font-size: 48px;
-	font-weight: bold;
-}
-
-.top-section p {
-    font-size: 24px;
-    color: #527298;
-    margin: 20px 0 0;
-}
+  .top-section h1, .top-section p {
+	color: #527298;
+  }
 
 body {
 	background-color: #f1ebe5;
 	margin: 0; 
-	padding: 80; 
 	font-family: Arial, sans-serif;
 }
 
-.paragraph {
-	padding: 30px;
+.content-section-with-bg {
 	background-color: #f9f9f9;
-	margin: 20px;
 	border-radius: 10px;
-	padding-bottom: 100px;
+	padding: 20px;
+	margin: 20px;
+}
+
+.content-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+.paragraph {
+	width: 45%;
+	/* move to top */
+		margin-top: -300px;
   }
 
 h1 {
 	color: #527298;
 	font-size: 40px;
-	margin-bottom: 10px;
 }
-
 
 p {
 	color: #527298;
 	font-size: 18px;
-	margin-bottom: 20px;
+}
+
+/* Add vertical divider */
+.content-section::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 48%;
+	width: 2px;
+	background-color: gray;
+	margin: auto;
 }
 
 #choropleth_map {
+	width: 100%;
+}
 
-	bottom: 100px; 
-	left: 100px;
-	right: 100px;
-	padding-bottom: 200px;
-	/*height: 1000px;
-	width: 800px;*/
+#vis-bar {
+	text-align: center;
+	margin: 40px 0;
 }
 
 #bar_chart {
