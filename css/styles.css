@@ -1,3 +1,56 @@
+
+
+.top-section {
+	text-align: center;
+	padding: 20px;
+	background-color: #f1ebe5;
+  }
+
+.top-section h1 {
+    text-align: center;
+    color: #527298; 
+    font-size: 40px;
+	font-weight: bold;
+}
+
+.top-section p {
+    font-size: 16px;
+    color: #527298;
+    margin: 20px 0 0;
+}
+
+.author-box {
+	display: inline-block;
+	border: 2px solid #527298;
+	padding: 10px 20px;
+	font-size: 16px;
+	color: #527298;
+	margin-top: 10px;
+	background-color: #f9f9f9;
+	font-family: Arial, sans-serif;
+  }
+
+body {
+	background-color: #f1ebe5;
+	margin: 0; 
+	padding: 0; 
+	font-family: Arial, sans-serif;
+}
+
+
+h1 {
+	color: #527298;
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+
+
+p {
+	color: #527298;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
 #choropleth_map {
 	top:100px;
 	bottom: 100px; 
@@ -16,60 +69,3 @@
 	align-items: center;
 
 }
-
-.top-section {
-    background-color: #d6d0c4; /* Slightly darker background */
-    padding: 40px;
-    text-align: center;
-}
-
-.top-section h1 {
-    text-align: center;
-    color: #527298; 
-    font-size: 40px;
-	font-weight: bold;
-}
-
-.top-section p {
-    font-size: 16px;
-    color: #527298;
-    margin: 20px 0 0;
-}
-
-.author-box {
-    margin-top: 20px;
-    background-color: #e6e0d5;
-    display: inline-block;
-    padding: 10px 20px;
-    border: 1px solid #527298;
-    font-size: 16px;
-    color: #333;
-}
-
-body {
-	background-color: #f1ebe5;
-	margin: 0; 
-	padding: 0; 
-	font-family: Arial, sans-serif;
-}
-
-
-h1 {
-    text-align: center;
-    color: #527298;
-    font-size: 40px;
-}
-
-/* Subtitle Styles */
-h2 {
-    text-align: center;
-    color: #527298;
-    font-size: 28px;
-}
-
-/* Paragraph Styles */
-p {
-    color: #527298;
-    font-size: 16px;
-}
-
