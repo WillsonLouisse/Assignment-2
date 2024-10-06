@@ -67,6 +67,14 @@ p {
 	width: 800px;*/
 }
 
+#bar_chart {
+	left: 100px;
+	right: 100px;
+	padding-bottom: 200px;
+	/*height: 1000px;
+	width: 800px;*/
+}
+
 
 .vega-bindings {
 	/* make it arrange horizontally on the left make gap in between only 20px */
