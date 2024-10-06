@@ -1,4 +1,14 @@
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;  /* Align items to the top */
+	padding: 20px;
+  }
 
+#vis-map {
+	flex: 1;
+	padding-right: 20px;  /* Space between map and content */
+}
 
 .top-section {
 	text-align: center;
