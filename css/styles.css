@@ -1,12 +1,4 @@
-#vis-map {
 
-	padding: 20px;  /* Space between map and content */
-}
-
-#vis-bar {
-	margin-top: 20px; /* Space between map and bar chart */
-	padding-left: 50px; /* Ensure bar chart doesn't stick to left */
-}
 .top-section {
 	text-align: center;
 	padding: 20px;
@@ -29,7 +21,7 @@
 body {
 	background-color: #f1ebe5;
 	margin: 0; 
-	padding: 0; 
+	padding: 80; 
 	font-family: Arial, sans-serif;
 }
 
@@ -38,7 +30,7 @@ body {
 	background-color: #f9f9f9;
 	margin: 20px;
 	border-radius: 10px;
-	padding-bottom: 50px;
+	padding-bottom: 100px;
   }
 
 h1 {
