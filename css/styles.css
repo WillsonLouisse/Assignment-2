@@ -16,3 +16,32 @@
 	align-items: center;
 
 }
+
+h1 {
+    text-align: center;
+    color: #527298;
+    font-size: 40px;
+}
+
+
+h2 {
+    text-align: center;
+    color: #527298;
+    font-size: 28px;
+}
+
+p {
+    color: #527298;
+    font-size: 16px;
+}
+
+/* CSS for the banner image */
+#banner {
+	text-align: center;
+	margin-bottom: 20px; /* Add spacing between the banner and the rest of the content */
+  }
+  
+  #banner img {
+	max-width: 80%; /* Make the image responsive */
+	height: auto;
+  }
