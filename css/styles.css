@@ -3,49 +3,64 @@
 	padding: 20px;
 	background-color: #f1ebe5;
   }
-
+  
   .top-section h1, .top-section p {
 	color: #527298;
   }
-
-body {
+  
+  body {
 	background-color: #f1ebe5;
-	margin: 0; 
+	margin: 0;
 	font-family: Arial, sans-serif;
-}
-
-.content-section-with-bg {
+  }
+  
+  h1 {
+	color: #527298;
+	font-size: 40px;
+	margin-bottom: 10px;
+  }
+  
+  p {
+	color: #527298;
+	font-size: 18px;
+  }
+  
+  .content-section-with-bg {
 	background-color: #f9f9f9;
 	border-radius: 10px;
 	padding: 20px;
 	margin: 20px;
-}
-
-.content-section {
+  }
+  
+  .content-section {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	position: relative;
-}
-
-.paragraph {
+  }
+  
+  
+  .vega-bindings {
+	  display: flex !important;
+	  flex-direction: row;
+	  justify-content: space-between;
+	  align-items: center;
+  }
+  
+  
+  .paragraph {
 	width: 45%;
 	/* move to top */
 		margin-top: -300px;
   }
-
-h1 {
-	color: #527298;
-	font-size: 40px;
-}
-
-p {
-	color: #527298;
-	font-size: 18px;
-}
-
-/* Add vertical divider */
-.content-section::before {
+  
+  
+  #choropleth_map {
+	width: 100%;
+  }
+  
+  /* Add vertical divider */
+  .content-section::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -54,31 +69,16 @@ p {
 	width: 2px;
 	background-color: gray;
 	margin: auto;
-}
-
-#choropleth_map {
-	width: 100%;
-}
-
-#vis-bar {
+  }
+  
+  #vis-bar {
 	text-align: center;
 	margin: 40px 0;
-}
-
-#bar_chart {
-	left: 100px;
-	right: 100px;
-	padding-bottom: 200px;
-	/*height: 1000px;
-	width: 800px;*/
-}
-
-
-.vega-bindings {
-	/* make it arrange horizontally on the left make gap in between only 20px */
-	display: flex !important;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-
-}
+  }
+  
+  #barChart {
+	display: inline-block;
+	width: 80%;
+	height: 400px;
+  }
+  

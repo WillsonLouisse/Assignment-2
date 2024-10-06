@@ -15,11 +15,11 @@
 <body>
 
 
-  <div class="top-section">
+   <div class="top-section">
     <h1> GROSS DOMESTIC PRODUCT (GDP) </h1>
-    <p>GDP estimates capture the value being created by the Malaysia 
-      Economy, with breakdowns available by economic sector and 
-      expenditure category. As a key data release monitored by policy 
+    <p>GDP estimates capture the value being created by the Malaysia
+      Economy, with breakdowns available by economic sector and
+      expenditure category. As a key data release monitored by policy
       makers, private sector, and international community.</p>
   </div>
 
@@ -41,12 +41,9 @@
     </div>
   </div>
 
-
-  <div id ="vis-bar">
-    <div id="bar_chart"></div>
+  <div id="vis-bar">
+    <div id="barChart"></div>
   </div>
-
-
 
 
 <script type="text/javascript">
@@ -58,7 +55,7 @@
 
   var barChartSpec = "js/barchart.vg.json"
   
-  vegaEmbed('#bar_chart', barChartSpec).then(function(result) {
+  vegaEmbed('#barChart', barChartSpec).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
