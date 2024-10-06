@@ -1,16 +1,12 @@
-.flex-container {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;  /* Align items to the top */
-	padding: 20px;
-  }
+#vis-map {
 
-#vis {
-	flex: 1;
-	padding-right: 20px;  /* Space between map and content */
-	left: 100px;
+	padding: 20px;  /* Space between map and content */
 }
 
+#vis-bar {
+	margin-top: 20px; /* Space between map and bar chart */
+	padding-left: 50px; /* Ensure bar chart doesn't stick to left */
+}
 .top-section {
 	text-align: center;
 	padding: 20px;
