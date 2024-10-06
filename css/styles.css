@@ -17,38 +17,59 @@
 
 }
 
-h1 {
+.top-section {
+    background-color: #d6d0c4; /* Slightly darker background */
+    padding: 40px;
     text-align: center;
-    color: #527298;
+}
+
+.top-section h1 {
+    text-align: center;
+    color: #527298; 
     font-size: 40px;
+	font-weight: bold;
 }
 
-
-h2 {
-    text-align: center;
-    color: #527298;
-    font-size: 28px;
-}
-
-p {
-    color: #527298;
+.top-section p {
     font-size: 16px;
+    color: #527298;
+    margin: 20px 0 0;
+}
+
+.author-box {
+    margin-top: 20px;
+    background-color: #e6e0d5;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #527298;
+    font-size: 16px;
+    color: #333;
 }
 
 body {
 	background-color: #f1ebe5;
 	margin: 0; 
 	padding: 0; 
+	font-family: Arial, sans-serif;
 }
 
-/* CSS for the banner image */
-#banner {
-	text-align: center;
-	margin-bottom: 20px; /* Add spacing between the banner and the rest of the content */
-  }
-  
-  #banner img {
-	max-width: 80%; /* Make the image responsive */
-	height: auto;
-  }
+
+h1 {
+    text-align: center;
+    color: #527298;
+    font-size: 40px;
+}
+
+/* Subtitle Styles */
+h2 {
+    text-align: center;
+    color: #527298;
+    font-size: 28px;
+}
+
+/* Paragraph Styles */
+p {
+    color: #527298;
+    font-size: 16px;
+}
 
