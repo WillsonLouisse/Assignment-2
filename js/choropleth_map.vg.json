@@ -99,13 +99,19 @@
           "lookup": "properties.Name",
           "from": {
             "data": {
-              "url": "https://raw.githubusercontent.com/WillsonLouisse/Assignment-2/refs/heads/main/A2DataNum.csv"
+              "url": "https://raw.githubusercontent.com/WillsonLouisse/Assignment-2/refs/heads/main/longlangmalay.csv"
             },
-            "key": "STATE",
-            "fields": ["GDP PER CAPITA", "POPULATION"]
+            "key": "Name",
+            "fields": ["Latitude", "Longitude"]
           }
         }
-      ]
+      ],
+      "mark": {"type": "text"},
+      "encoding": {
+        "longitude": {"field": "Longitude", "type": "quantitative"},
+        "latitude": {"field": "Latitude", "type": "quantitative"},
+        "text": {"field": "properties.Name", "type": "nominal"}
+      }
     }
   ]
   
