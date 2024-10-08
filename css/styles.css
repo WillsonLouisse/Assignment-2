@@ -83,13 +83,13 @@
 	height: 400px;
   	}
 
-  .lineChart {
+  .areaChart {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	}
 
-  #lineChart .vega-bindings {
+  #areaChart .vega-bindings {
     display: flex ;
     justify-content: center;
     flex-wrap: wrap;

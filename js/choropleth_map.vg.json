@@ -2,7 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "GDP in Malaysia Per States",
-    "fontSize": 30
+    "fontSize": 28,
+    "fontStyle": "helvetica"
   },
 
   "width": 1440,
@@ -78,7 +79,8 @@
           "field": "GDP_PER_CAPITA_NUM",
           "type": "quantitative",
           "legend": {
-            "titleFontSize": 16,
+
+            "titleFontSize": 18,
             "labelFontSize": 14,
             "symbolSize": 200,
             "title": "GDP PER CAPITA"
@@ -90,6 +92,20 @@
           {"field": "GDP_PER_CAPITA_NUM", "type": "quantitative", "format": ",.0f", "title": "GDP PER CAPITA: "}
         ]
       }
+    },
+    {
+      "transform": [
+        {
+          "lookup": "properties.Name",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/WillsonLouisse/Assignment-2/refs/heads/main/A2DataNum.csv"
+            },
+            "key": "STATE",
+            "fields": ["GDP PER CAPITA", "POPULATION"]
+          }
+        }
+      ]
     }
   ]
   
