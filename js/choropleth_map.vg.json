@@ -1,8 +1,12 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "GDP in Malaysia Per States",
-  "width": 800,
-  "height": 400,
+  "title": {
+    "text": "GDP in Malaysia Per States",
+    "fontSize": 30
+  },
+
+  "width": 1440,
+  "height": 720,
   "background": "lightblue",
 
   "params":[
@@ -72,7 +76,13 @@
       "encoding": {
         "color": {
           "field": "GDP_PER_CAPITA_NUM",
-          "type": "quantitative"
+          "type": "quantitative",
+          "legend": {
+            "titleFontSize": 16,
+            "labelFontSize": 14,
+            "symbolSize": 200,
+            "title": "GDP PER CAPITA"
+          }
         },
         "tooltip": [
           {"field": "properties.Name", "type": "nominal", "title": "State: "},
