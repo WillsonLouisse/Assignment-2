@@ -2,62 +2,71 @@
 <html>
 <head>
   <title>Assignment 2</title>
-  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.5.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
-  
-  <!-- CSS file -->
   <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
-
 </head>
 
 <body>
-
-
-   <div class="top-section">
-    <h1> GROSS DOMESTIC PRODUCT (GDP) In Malaysia </h1>
+  <div class="top-section">
+    <h1>GROSS DOMESTIC PRODUCT (GDP) In Malaysia</h1>
   </div>
 
-  <div class="content-section-with-bg">
-    <div class="content-section">
-      <div class="paragraph">
-        <h1> Gross Domestic Product </h1>
+  <div class="content-section-top">
+    <h2>Gross Domestic Product</h2>
+    <p>Gross Domestic Product (GDP) is one of the most widely used indicators of a country's economic performance. This estimates and captures the monetary value being created within a country's borders over a specific period. GDP is measured through the economy, with breakdowns available by economic sector and expenditure category. As a key data release monitored by policy makers, private sector, and international community.</p>
+  </div>
 
-        <p>Gross Domestic Product (GDP) is one of the most widely used indicators of a
-          country's economic performance. This estimates and captures the monetary value 
-          being created withing a country's borders over a specific period.
+  <hr>
 
-          GDP is measured through the economy, with breakdowns available by 
-          economic sector and expenditure category. As a key data release 
-          monitored by policy makers, private sector, and international community.</p>
+  <div id="vis">
+    <div id="choropleth_map"></div>
+  </div>
 
-      </div>
+  <hr>
 
-      <div id="vis">
-        <div id="choropleth_map"></div>
-      </div>
+  <div class="content-section">
+    <div class="paragraph">
+      <p>Malaysia's GDP is a key indicator of its economic performance,
+          showed from all of the states. This reflects the total value of all goods
+          and services produced per states.
+
+          This shows the economic health of the country and position in the global economy.</p>
     </div>
+    <div id="areaChart"></div>
   </div>
 
-  <div id="vis-bar">
+  <hr>
+
+  <div class="content-section">
+    <div class="paragraph">
+      <p>Placeholder</p>
+    </div>
     <div id="barChart"></div>
   </div>
 
+  <hr>
 
-<script type="text/javascript">
+  <div class="content-section">
+    <p>Placeholder</p>
+  </div>
 
-  var spec2 = "js/choropleth_map.vg.json";
-  vegaEmbed('#choropleth_map', spec2).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
+  <script type="text/javascript">
+    var spec2 = "js/choropleth_map.vg.json";
+    vegaEmbed('#choropleth_map', spec2).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
 
-  var barChartSpec = "js/barchart.vg.json"
-  
-  vegaEmbed('#barChart', barChartSpec).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-</script>
+    var areaChartSpec = "js/areachart.vg.json";
+    vegaEmbed('#areaChart', areaChartSpec).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
 
+    var barChartSpec = "js/barchart.vg.json";
+    vegaEmbed('#barChart', barChartSpec).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+  </script>
 </body>
 </html>
