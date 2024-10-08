@@ -1,0 +1,67 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 800,
+    "height": 400,
+
+    "params":[
+        {
+          "name": "year_level",
+          "value": 2021,
+          "bind": {
+            "input": "range",
+            "min": 2001,
+            "max": 2021,
+            "step": 1,
+            "name": "Year : "
+          }
+      }
+    ],
+    "data": { 
+        "url": "https://raw.githubusercontent.com/WillsonLouisse/Assignment-2/refs/heads/main/ANUAL%20GDP%20MALAYSIA.csv"
+     },
+    "title" : "GDP Annual Growth In Malaysia",
+
+    "transform": [
+        {
+            "calculate": "year(datum['YEAR'])", 
+            "as": "parsed_year"
+        },
+        {
+            "filter": "datum.parsed_year <= year_level"
+        }
+    ],
+
+    "mark": {
+        "type": "line",
+        "strokeWidth": 3,
+        "tooltip": "true"
+    },
+
+    "encoding": {
+        "x": { "timeUnit": "year", "field": "YEAR", "type": "ordinal",
+        "axis":
+        {
+            "title": "TImeline",
+            "labelFont": "Helvetica",         
+            "labelFontSize": 12
+        }
+    },
+
+        "y": {"field": "ANNUAL GROWTH", "type": "quantitative",
+        "axis":
+        {
+            "title": "Annual Growth Rate (%)",
+            "labelFont": "Helvetica",         
+            "labelFontSize": 12
+        },
+        "scale": {
+            "domain": [-20, 25]
+        }
+    },
+
+    "tooltip": [
+            {"timeUnit": "year", "field": "YEAR", "type": "ordinal", "title": "YEAR: "},
+            {"field": "ANNUAL GROWTH", "type": "quantitative", "title": "ANUAL GROWTH: "}
+        ]
+    }
+}
