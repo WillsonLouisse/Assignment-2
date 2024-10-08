@@ -12,11 +12,11 @@
   "params":[
     {
       "name": "zoom_lvl",
-      "value": 2000,
+      "value": 5000,
       "bind": {
         "input": "range",
-        "min": 2000,
-        "max": 5000,
+        "min": 3000,
+        "max": 10000,
         "step": 50,
         "name": "Zoom : "
       }
