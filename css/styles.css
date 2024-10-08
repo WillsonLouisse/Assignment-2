@@ -82,12 +82,7 @@
 	text-align: center;
 	margin: 40px 0;
   	}
-  
-  #barChart {
-	display: inline-block;
-	width: 80%;
-	height: 400px;
-  	}
+
 
   .areaChart {
 	display: flex;
