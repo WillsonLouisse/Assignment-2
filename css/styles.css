@@ -4,7 +4,10 @@
 	background-color: #dad2c9;
   	}
 
-  
+  .top-section p{
+	font-size: 22px;
+	}
+
   body {
 	background-color: #f1ebe5;
 	margin: 0;
