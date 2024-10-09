@@ -10,7 +10,7 @@
   body {
 	background-color: #f1ebe5;
 	margin: 0;
-	font-family: Arial, sans-serif;
+	font-family: 'Raleway', sans-serif;
 	color: #527298;
   	}
   
@@ -33,6 +33,11 @@
 	font-family: 'Raleway', sans-serif;
 
   	}
+  pre{
+	font-size: 22px;
+	font-family: 'Raleway', sans-serif;
+
+  }
   
   .content-section-top {
 	background-color: #f1ebe5;
