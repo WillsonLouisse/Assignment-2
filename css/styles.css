@@ -130,6 +130,7 @@
   select {
 	font-size: 18px; /* Adjust this value to make the font larger */
 	padding: 10px;   /* Optionally, add some padding to increase the clickable area */
+	font-family: 'Quicksand', sans-serif;
 	}
 
 
