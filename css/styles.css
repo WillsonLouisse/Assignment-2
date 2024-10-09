@@ -2,9 +2,9 @@
 	text-align: center;
 	padding: 20px;
 	background-color: #dad2c9;
+
+
   	}
-
-
 
   body {
 	background-color: #f1ebe5;
@@ -17,6 +17,7 @@
 	color: #527298;
 	font-size: 40px;
 	margin-bottom: 10px;
+    font-family: 'Georgia', serif;
   	}
 
   h2 {
@@ -125,4 +126,34 @@
   select {
 	font-size: 18px; /* Adjust this value to make the font larger */
 	padding: 10px;   /* Optionally, add some padding to increase the clickable area */
+	}
+
+
+	.box {
+		display: flex;
+		/* flex-direction: row; */
+		height: auto;
+		padding: 10px;
+		background-color: #f9f9f9;
+		margin-bottom: 30px;
+	}
+	
+	.section {
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 20px;
+		border-right: 1px solid #ccc;
+	}
+	
+	.section:last-child {
+		border-right: none; /* Remove right border for the last section */
+	}
+	
+	.section img {
+		width: 180px;  /* Set the width to 180px */
+		height: 180px; /* Set the height to 180px */
+		object-fit: cover; /* Ensures the image scales and crops to fit the size */
+		border-radius: 5px; /* Optional: Add rounded corners to images */
 	}
