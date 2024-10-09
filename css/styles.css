@@ -3,6 +3,7 @@
 	text-align: center;
 	padding: 20px;
 	background-color: #dad2c9;
+
   	}
 
   body {
@@ -29,13 +30,13 @@
   p {
 	font-size: 22px;
 	font-family: 'Raleway', sans-serif;
-
+	line-height: 1.5;
   	}
-	
+
   pre{
 	font-size: 22px;
 	font-family: 'Raleway', sans-serif;
-
+	line-height: 1.5;
     }
   
   .content-section-top {
@@ -51,6 +52,7 @@
   .content-section-top p{
 	font-size: 25px;
 	text-align: center;
+	line-height: 1.5;
 	}
   
   .content-section {
