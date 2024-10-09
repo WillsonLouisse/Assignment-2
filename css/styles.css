@@ -1,3 +1,4 @@
+
 .top-section {
 	text-align: center;
 	padding: 20px;
@@ -17,17 +18,20 @@
 	color: #527298;
 	font-size: 40px;
 	margin-bottom: 10px;
-    font-family: 'Georgia', serif;
+    font-family: 'Josefin Sans', sans-serif;
   	}
 
   h2 {
 	color: #527298;
 	font-size: 30px;
 	margin-bottom: 10px;
+	font-family: 'Josefin Sans', sans-serif;
 	}
   
   p {
 	font-size: 22px;
+	font-family: 'Raleway', sans-serif;
+
   	}
   
   .content-section-top {
@@ -142,11 +146,27 @@
 	
 	.section {
 		flex: 1;
-		padding: 20px;
 		text-align: center;
 		border-right: 1px solid #ccc;
+
 	}
 	
+	.section pre{
+		font-family: Arial, sans-serif;
+		font-size: 18px;
+		text-align: center;
+		font-family: 'Quicksand', sans-serif;
+	}
+
+	.section-top{
+		font-size: 20px;
+		font-family: 'Quicksand', sans-serif;
+	}
+	.section-bottom{
+		font-size: 10px;
+		font-style: italic;
+		font-family: 'Quicksand', sans-serif;
+	}
 	.section:last-child {
 		border-right: none; /* Remove the right border for the last section */
 	}
