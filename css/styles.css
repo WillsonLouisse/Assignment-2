@@ -171,3 +171,8 @@
 	.section:last-child {
 		border-right: none; /* Remove the right border for the last section */
 	}
+
+	.barrier{
+		height: 50px; 
+		width: 100%; 
+	}
