@@ -1,9 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
   "title": {
     "text": "GDP in Malaysia Per States",
-    "fontSize": 28,
-    "fontStyle": "helvetica"
+    "fontSize": 30,
+    "font": "Ginebra"
   },
 
   "width": 1440,

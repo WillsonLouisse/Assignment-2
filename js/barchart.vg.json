@@ -9,7 +9,11 @@
 
     "hconcat": [
         {
-            "title": "GDP PER CAPITA in Malaysia Per States",
+            "title": {
+                "text": "GDP in Malaysia Per States",
+                "fontSize": 20,
+                "font": "Ginebra"
+              },
             "width": 480,
             "height": 480,
             
@@ -62,9 +66,12 @@
         },
         
 
-
         {
-            "title": "GDP NOMINAL in Malaysia Per States",
+            "title": {
+                "text": "GDP NOMINAL in Malaysia Per States",
+                "fontSize": 20,
+                "font": "Ginebra"
+            },
             "width": 480,
             "height": 480,
             "mark": {

@@ -19,7 +19,11 @@
     "data": { 
         "url": "https://raw.githubusercontent.com/WillsonLouisse/Assignment-2/refs/heads/main/ANUAL%20GDP%20MALAYSIA.csv"
      },
-    "title" : "GDP Annual Growth In Malaysia",
+    "title" : {
+        "text":"GDP Annual Growth In Malaysia",
+        "fontSize": 20,
+        "font": "Ginebra"
+    },
 
     "transform": [
         {
