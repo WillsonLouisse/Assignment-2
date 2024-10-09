@@ -131,29 +131,22 @@
 
 	.box {
 		display: flex;
-		/* flex-direction: row; */
+		flex-direction: row;
+		width: 100vw;
 		height: auto;
 		padding: 10px;
-		background-color: #f9f9f9;
+		background-color: #fff;
+		border: 1px solid #527298;
 		margin-bottom: 30px;
 	}
 	
 	.section {
 		flex: 1;
-		display: flex;
-		justify-content: center;
-		align-items: center;
 		padding: 20px;
+		text-align: center;
 		border-right: 1px solid #ccc;
 	}
 	
 	.section:last-child {
-		border-right: none; /* Remove right border for the last section */
-	}
-	
-	.section img {
-		width: 180px;  /* Set the width to 180px */
-		height: 180px; /* Set the height to 180px */
-		object-fit: cover; /* Ensures the image scales and crops to fit the size */
-		border-radius: 5px; /* Optional: Add rounded corners to images */
+		border-right: none; /* Remove the right border for the last section */
 	}
