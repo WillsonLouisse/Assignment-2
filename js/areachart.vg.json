@@ -35,14 +35,15 @@
         }
     ],
 
+
     "layer": [
         {
             "mark": {
-                "type": "line",
-                "strokeWidth": 3,
-                "tooltip": "true"
+            "type": "line",
+            "strokeWidth": 3,
+            "tooltip": "true"
             },
-        
+
             "encoding": {
                 "x": { "timeUnit": "year", "field": "YEAR", "type": "ordinal",
                 "axis":
@@ -51,9 +52,9 @@
                     "labelFont": "Helvetica",         
                     "labelFontSize": 12
                 }
-            },
-        
-                "y": {"field": "ANNUAL GROWTH", "type": "quantitative",
+        },
+
+            "y": {"field": "ANNUAL GROWTH", "type": "quantitative",
                 "axis":
                 {
                     "title": "Annual Growth Rate (%)",
@@ -64,24 +65,26 @@
                     "domain": [-20, 25]
                 }
             }
-        }
+            }
         },
+
         {
             "mark": {
-                "type": "point",
-                "opacity": 0,
-                "size": 1000,
-                "tooltip": "true"
+              "type": "point",
+              "opacity": 0,
+              "size": 1000,
+              "tooltip": true
             },
             "encoding": {
-                "x": { "timeUnit": "year", "field": "YEAR", "type": "ordinal"},
-                "y": { "field": "ANNUAL GROWTH", "type": "quantitative"},
-                "tooltip": [
-                {"timeUnit": "year", "field": "YEAR", "type": "ordinal", "title": "YEAR: "},
-                {"field": "ANNUAL GROWTH", "type": "quantitative", "title": "ANNUAL GROWTH: "}
-                ]
+              "x": {"timeUnit": "year","field": "YEAR","type": "ordinal"},
+              "y": {"field": "ANNUAL GROWTH","type": "quantitative"},
+              "tooltip": [
+                {"timeUnit": "year", "field": "YEAR", "type": "ordinal", "title": "Year: "},
+                {"field": "ANNUAL GROWTH", "type": "quantitative", "title": "Annual Growth: "}
+              ]
             }
         }
-    ]
 
+    ]
 }
+    
