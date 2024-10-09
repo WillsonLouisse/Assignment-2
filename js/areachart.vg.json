@@ -35,37 +35,53 @@
         }
     ],
 
-    "mark": {
-        "type": "line",
-        "strokeWidth": 3,
-        "tooltip": "true"
-    },
-
-    "encoding": {
-        "x": { "timeUnit": "year", "field": "YEAR", "type": "ordinal",
-        "axis":
+    "layer": [
         {
-            "title": "TImeline",
-            "labelFont": "Helvetica",         
-            "labelFontSize": 12
+            "mark": {
+                "type": "line",
+                "strokeWidth": 3,
+                "tooltip": "true"
+            },
+        
+            "encoding": {
+                "x": { "timeUnit": "year", "field": "YEAR", "type": "ordinal",
+                "axis":
+                {
+                    "title": "TImeline",
+                    "labelFont": "Helvetica",         
+                    "labelFontSize": 12
+                }
+            },
+        
+                "y": {"field": "ANNUAL GROWTH", "type": "quantitative",
+                "axis":
+                {
+                    "title": "Annual Growth Rate (%)",
+                    "labelFont": "Helvetica",         
+                    "labelFontSize": 12
+                },
+                "scale": {
+                    "domain": [-20, 25]
+                }
+            }
         }
-    },
-
-        "y": {"field": "ANNUAL GROWTH", "type": "quantitative",
-        "axis":
-        {
-            "title": "Annual Growth Rate (%)",
-            "labelFont": "Helvetica",         
-            "labelFontSize": 12
         },
-        "scale": {
-            "domain": [-20, 25]
+        {
+            "mark": {
+                "type": "point",
+                "opacity": 0,
+                "size": 1000,
+                "tooltip": "true"
+            },
+            "encoding": {
+                "x": { "timeUnit": "year", "field": "YEAR", "type": "ordinal"},
+                "y": { "field": "ANNUAL GROWTH", "type": "quantitative"},
+                "tooltip": [
+                {"timeUnit": "year", "field": "YEAR", "type": "ordinal", "title": "YEAR: "},
+                {"field": "ANNUAL GROWTH", "type": "quantitative", "title": "ANNUAL GROWTH: "}
+                ]
+            }
         }
-    },
+    ]
 
-    "tooltip": [
-            {"timeUnit": "year", "field": "YEAR", "type": "ordinal", "title": "YEAR: "},
-            {"field": "ANNUAL GROWTH", "type": "quantitative", "title": "ANUAL GROWTH: "}
-        ]
-    }
 }
