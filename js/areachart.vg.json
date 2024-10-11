@@ -83,7 +83,31 @@
                 {"field": "ANNUAL GROWTH", "type": "quantitative", "title": "Annual Growth: "}
               ]
             }
+        },
+
+        {
+            "mark": {
+                "type": "text",
+                "align": "center",
+                "dx": 25,
+                "dy": 5,
+                "fontSize": 12
+
+            },
+            "encoding": {
+                "x": {"timeUnit": "year", "field": "YEAR", "type": "ordinal"},
+                "y": {"field": "ANNUAL GROWTH", "type": "quantitative"},
+                "text": {
+                    "field": "ANNUAL GROWTH",
+                    "type": "quantitative"
+                }
+            },
+            "transform": [
+                {"filter": "year(datum['YEAR']) == '2010' || year(datum['YEAR']) == '2018' || year(datum['YEAR']) == '2008'"}
+            ]
         }
+
+
 
     ]
 }
