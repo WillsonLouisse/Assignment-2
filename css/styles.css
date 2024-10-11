@@ -199,6 +199,11 @@ select {
 
 }
 
+.box pre{
+	font-size: 18px;
+	font-family: 'Quicksand', sans-serif;
+}
+
 .section {
     flex: 1;
     text-align: center;
