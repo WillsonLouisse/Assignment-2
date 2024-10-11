@@ -17,6 +17,12 @@
             "width": 480,
             "height": 480,
             
+            "transform": [
+                {"sort": [{"field": "GDP PER CAPITA", "order": "descending"}]}
+            ],
+            
+            "layer": [
+                {
             "mark": {
                 "type": "bar",
                 "tooltip": true
@@ -62,7 +68,32 @@
                 {"field": "STATE", "type": "nominal", "title": "STATE: "},
                 {"field": "GDP PER CAPITA", "type": "quantitative", "format": ",.0f", "title": "GDP PER CAPITA: "}
             ]
-
+        },
+        {
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 5,
+                "dy": -5,
+                "fontSize": 14,
+                "color": "red"
+            },
+            "encoding": {
+                "text": {"field": "GDP PER CAPITA", "type": "quantitative", "format": ",.0f", "title": "Kuala Lumpur: "},
+                "x": {"field": "STATE", "type": "nominal"},
+                "y": {"field": "GDP PER CAPITA", "type": "quantitative"},
+                "opacity": {
+                    "condition": {
+                        "test": "datum.STATE === 'Kuala Lumpur'", 
+                        "value": 1
+                    },
+                    "value": 0
+                }
+            }
+        }
+            ]
+        
+        
         },
         
 
