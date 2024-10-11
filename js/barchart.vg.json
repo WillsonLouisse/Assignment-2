@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 800,
-    "height": 400,
+    "width": 200,
+    "height": 200,
       
     "data": {
         "url": "https://raw.githubusercontent.com/WillsonLouisse/Assignment-2/refs/heads/main/A2DataNum.csv"
@@ -14,15 +14,10 @@
                 "fontSize": 20,
                 "font": "Ginebra"
               },
-            "width": 480,
+            "width": 380,
             "height": 480,
             
-            "transform": [
-                {"sort": [{"field": "GDP PER CAPITA", "order": "descending"}]}
-            ],
             
-            "layer": [
-                {
             "mark": {
                 "type": "bar",
                 "tooltip": true
@@ -68,32 +63,7 @@
                 {"field": "STATE", "type": "nominal", "title": "STATE: "},
                 {"field": "GDP PER CAPITA", "type": "quantitative", "format": ",.0f", "title": "GDP PER CAPITA: "}
             ]
-        },
-        {
-            "mark": {
-                "type": "text",
-                "align": "left",
-                "dx": 5,
-                "dy": -5,
-                "fontSize": 14,
-                "color": "red"
-            },
-            "encoding": {
-                "text": {"field": "GDP PER CAPITA", "type": "quantitative", "format": ",.0f", "title": "Kuala Lumpur: "},
-                "x": {"field": "STATE", "type": "nominal"},
-                "y": {"field": "GDP PER CAPITA", "type": "quantitative"},
-                "opacity": {
-                    "condition": {
-                        "test": "datum.STATE === 'Kuala Lumpur'", 
-                        "value": 1
-                    },
-                    "value": 0
-                }
-            }
-        }
-            ]
-        
-        
+
         },
         
 
@@ -103,7 +73,7 @@
                 "fontSize": 20,
                 "font": "Ginebra"
             },
-            "width": 480,
+            "width": 380,
             "height": 480,
             "mark": {
                 "type": "bar",
