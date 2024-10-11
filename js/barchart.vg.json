@@ -14,7 +14,7 @@
                 "fontSize": 20,
                 "font": "Ginebra"
               },
-            "width": 380,
+            "width": 370,
             "height": 480,
             
             
@@ -73,7 +73,7 @@
                 "fontSize": 20,
                 "font": "Ginebra"
             },
-            "width": 380,
+            "width": 370,
             "height": 480,
             "mark": {
                 "type": "bar",
