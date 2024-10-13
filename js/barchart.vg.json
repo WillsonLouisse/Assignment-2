@@ -12,7 +12,7 @@
             "title": {
                 "text": "GDP PER CAPITA Per States",
                 "fontSize": 20,
-                "font": "Ginebra"
+                "font": "Helvetica"
               },
             "width": 370,
             "height": 480,

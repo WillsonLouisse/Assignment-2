@@ -22,7 +22,7 @@
     "title" : {
         "text":"GDP Annual Growth In Malaysia",
         "fontSize": 20,
-        "font": "Ginebra"
+        "font": "Helvetica"
     },
 
     "transform": [
